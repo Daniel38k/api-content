@@ -7,7 +7,7 @@ const tempo = (request: NextApiRequest, response: NextApiResponse) => {
             { id: 2, name: 'Danil' }
         ])
     } catch (err) {
-        response.status(500).json({ statusCode: 500, message: err.message })
+        response.status(500).json({ statusCode: 500 })
     }
 }
 
